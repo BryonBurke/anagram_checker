@@ -1,7 +1,7 @@
 class Change
   def initialize(amount_in_pennies)
     @amount_in_pennies = amount_in_pennies
-    @quarters
+    @quarters = 0
     @dimes
     @nickels
   end
@@ -44,28 +44,28 @@ class Change
   end
 
 
-def final_make_change()
-  puts number_of_quarters()
-  puts number_of_dimes()
-  puts number_of_nickels()
-  puts number_of_pennies()
-end
+  def final_make_change()
+    number_of_quarters()
+    number_of_dimes()
+    number_of_nickels()
+    number_of_pennies()
+  end
 
-def quarters
-  @quarters
-end
+  def quarters
+    @quarters
+  end
 
-def dimes
-  @dimes
-end
+  def dimes
+    @dimes
+  end
 
-def nickels
-  @nickels
-end
+  def nickels
+    @nickels
+  end
 
-def pennies
-  @amount_in_pennies
-end
+  def pennies
+    @amount_in_pennies
+  end
 
 
 
