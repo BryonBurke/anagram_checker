@@ -10,8 +10,6 @@ class Change
     until (@amount_in_pennies < 25 )
       @quarters = (@amount_in_pennies / 25)
       @amount_in_pennies = @amount_in_pennies % 25
-
-      # puts @quarters
       break
     end
     @quarters
@@ -21,8 +19,6 @@ class Change
     until (@amount_in_pennies < 10 )
       @dimes = (@amount_in_pennies / 10)
       @amount_in_pennies = @amount_in_pennies % 10
-
-      # puts @dimes
       break
     end
     @dimes
@@ -32,8 +28,6 @@ class Change
     until (@amount_in_pennies < 5 )
       @nickels = (@amount_in_pennies / 5)
       @amount_in_pennies = @amount_in_pennies % 5
-
-      # puts  @nickels
       break
     end
     @nickels
@@ -50,22 +44,9 @@ class Change
     number_of_nickels()
     number_of_pennies()
   end
+  attr_reader(:quarters, :dimes, :nickels, :amount_in_pennies )
 
-  def quarters
-    @quarters
-  end
 
-  def dimes
-    @dimes
-  end
-
-  def nickels
-    @nickels
-  end
-
-  def pennies
-    @amount_in_pennies
-  end
 
 
 
