@@ -10,8 +10,8 @@ class Change
     until (@amount_in_pennies < 25 )
       @quarters = (@amount_in_pennies / 25)
       @amount_in_pennies = @amount_in_pennies % 25
-      puts @amount_in_pennies
-      puts @quarters
+
+      # puts @quarters
       break
     end
     @quarters
@@ -21,8 +21,8 @@ class Change
     until (@amount_in_pennies < 10 )
       @dimes = (@amount_in_pennies / 10)
       @amount_in_pennies = @amount_in_pennies % 10
-      puts  @amount_in_pennies
-      puts @dimes
+
+      # puts @dimes
       break
     end
     @dimes
@@ -32,10 +32,41 @@ class Change
     until (@amount_in_pennies < 5 )
       @nickels = (@amount_in_pennies / 5)
       @amount_in_pennies = @amount_in_pennies % 5
-      puts  @amount_in_pennies
-      puts  @nickels
+
+      # puts  @nickels
       break
     end
     @nickels
   end
+
+  def number_of_pennies()
+    @amount_in_pennies
+  end
+
+
+def final_make_change()
+  puts number_of_quarters()
+  puts number_of_dimes()
+  puts number_of_nickels()
+  puts number_of_pennies()
+end
+
+def quarters
+  @quarters
+end
+
+def dimes
+  @dimes
+end
+
+def nickels
+  @nickels
+end
+
+def pennies
+  @amount_in_pennies
+end
+
+
+
 end
