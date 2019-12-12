@@ -2,7 +2,8 @@ require('rspec')
 require('ruby_logic')
 
 describe('#ruby_logic') do
-  it("replaces a desired word with a new one") do
-    # words = Sentence.new("cat", "dog")
-    # expect(words.word_replace).to(eq("I am walking my dog to the cathedral"))
+  it("finds the number of quarters") do
+    my_change = Change.new(117)
+    expect(my_change.number_of_quarters).to(eq(4))
   end
+end
