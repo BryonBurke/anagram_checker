@@ -13,9 +13,9 @@ class Anagram
     word_two_array.sort
 
     if word_one_array = word_two_array
-      @anagram = true
+      @anagram = "are"
     else
-      @anagram = false
+      @anagram = "are not "
     end
 
     return @anagram
