@@ -8,6 +8,7 @@ class Anagram
 
   def test_anagram()
     @word_one_array = @word_one.split
+    puts @word_one_array
     @word_one_array.sort
 
 
@@ -23,8 +24,9 @@ class Anagram
   end
 
   def check_for_vowels()
-    a = [ "a", "b", "c" ]
-    if (a.include?( "a" ))
+    @word_one_array = @word_one.split
+    puts @word_one_array
+    if (@word_one_array.include?( "a" ) | ("e") | ("i") | ("o") | ("u"))
       @is_word = "is"
     else
       @is_word = "not"
@@ -32,8 +34,3 @@ class Anagram
     return @is_word
   end
 end
-
-
-a = [ "a", "b", "c" ]
-a.include?("b")   #=> true
-a.include?("z")   #=> false
