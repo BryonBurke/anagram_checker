@@ -5,7 +5,7 @@ class Anagram
 
   end
 
-  def test_palindrome()
+  def test_anagram()
     # word_one_array = []
     # word_two_array = []
     # word_one_array.push(word_one)
