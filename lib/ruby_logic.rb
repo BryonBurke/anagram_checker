@@ -10,6 +10,7 @@ class Anagram
     @word_one_array = @word_one.split
     @word_one_array.sort
 
+
     @word_two_array = @word_two.split
     @word_two_array.sort
 
@@ -21,12 +22,18 @@ class Anagram
     return @anagram
   end
 
-  def check_for_vowels
-    if (@word_one_array.include?( "a" )
+  def check_for_vowels()
+    a = [ "a", "b", "c" ]
+    if (a.include?( "a" ))
       @is_word = "is"
     else
       @is_word = "not"
     end
+    return @is_word
   end
-
 end
+
+
+a = [ "a", "b", "c" ]
+a.include?("b")   #=> true
+a.include?("z")   #=> false

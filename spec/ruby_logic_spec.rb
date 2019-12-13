@@ -17,7 +17,8 @@ end
 
 describe('#ruby_logic') do
   it("checks that words contains a vowel") do
-    my_word = Anagram.new("LStn", "slNt")
-    expect(my_word.check_for_vowels).to(eq("not"))
+    my_possible_word = Anagram.new("LStn", "slNt")
+    expect(my_possible_word.check_for_vowels).to(eq("is"))
+    puts @word_one_array
   end
 end
