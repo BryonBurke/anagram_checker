@@ -2,24 +2,25 @@ class Anagram
   def initialize(word_one, word_two)
     @word_one = word_one
     @word_two = word_two
-    @Anagram
+    @anagram
 
   end
 
   def test_anagram()
     word_one_array = []
-    word_two_array = []
-
     word_one_array.push(@word_one)
     word_one_array.split
-    word_one_array.sort
+    # word_one_array.sort
 
+    word_two_array = []
     word_one_array.push(@word_two)
     word_one_array.split
-    word_one_array.sort
+    # word_one_array.sort
+
+    @word_one & @word_two == @word_two
 
     if word_one_array = word_two_array
-    @anagram = true
+      @anagram = true
     else
       @anagram = false
     end
