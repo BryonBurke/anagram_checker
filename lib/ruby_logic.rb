@@ -6,11 +6,11 @@ class Anagram
   end
 
   def test_anagram()
-    word_one_array = @word_one.split
-    word_one_array.sort
+    @word_one_array = @word_one.split
+    @word_one_array.sort
 
-    word_two_array = @word_two.split
-    word_two_array.sort
+    @word_two_array = @word_two.split
+    @word_two_array.sort
 
     if word_one_array = word_two_array
       @anagram = "are"
@@ -20,4 +20,13 @@ class Anagram
 
     return @anagram
   end
+
+  def check_for_vowels
+    if (@word_one_array.include?("a" |" e" | "i" | "o" | "u" |))
+      is_word = "is"
+    else
+      is_word = "not"
+
+  end
+
 end
