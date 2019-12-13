@@ -3,21 +3,14 @@ class Anagram
     @word_one = word_one
     @word_two = word_two
     @anagram
-
   end
 
   def test_anagram()
-    word_one_array = []
-    word_one_array.push(@word_one)
-    word_one_array.split
-    # word_one_array.sort
+    word_one_array = @word_one.split
+    word_one_array.sort
 
-    word_two_array = []
-    word_one_array.push(@word_two)
-    word_one_array.split
-    # word_one_array.sort
-
-    @word_one & @word_two == @word_two
+    word_two_array = @word_two.split
+    word_two_array.sort
 
     if word_one_array = word_two_array
       @anagram = true
@@ -25,10 +18,6 @@ class Anagram
       @anagram = false
     end
 
-
-
-    @result_array.push(number)
     return @anagram
-
   end
 end
