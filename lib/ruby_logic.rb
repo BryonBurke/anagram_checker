@@ -3,6 +3,7 @@ class Anagram
     @word_one = word_one.downcase
     @word_two = word_two.downcase
     @anagram
+    @is_word
   end
 
   def test_anagram()
@@ -17,15 +18,14 @@ class Anagram
     else
       @anagram = "are not "
     end
-
     return @anagram
   end
 
   def check_for_vowels
-    if ((@word_one_array.include?("a" |" e" | "i" | "o" | "u" )
-      is_word = "is"
+    if (@word_one_array.include?( "a" )
+      @is_word = "is"
     else
-      is_word = "not"
+      @is_word = "not"
     end
   end
 
