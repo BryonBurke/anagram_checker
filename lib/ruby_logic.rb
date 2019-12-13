@@ -12,7 +12,7 @@ class Anagram
     @word_two_array = @word_two.split
     @word_two_array.sort
 
-    if word_one_array = word_two_array
+    if @word_one_array = @word_two_array
       @anagram = "are"
     else
       @anagram = "are not "
@@ -22,11 +22,11 @@ class Anagram
   end
 
   def check_for_vowels
-    if (@word_one_array.include?("a" |" e" | "i" | "o" | "u" |))
+    if ((@word_one_array.include?("a" |" e" | "i" | "o" | "u" )
       is_word = "is"
     else
       is_word = "not"
-
+    end
   end
 
 end
