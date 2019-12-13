@@ -7,3 +7,10 @@ describe('#ruby_logic') do
     expect(my_word.test_anagram).to(eq(true))
   end
 end
+
+describe('#ruby_logic') do
+  it("ensures lower case for comparison") do
+    my_word = Anagram.new("LiSten", "sIleNt")
+    expect(my_word.test_anagram).to(eq(true))
+  end
+end

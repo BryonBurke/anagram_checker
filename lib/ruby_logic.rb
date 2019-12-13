@@ -1,7 +1,7 @@
 class Anagram
   def initialize(word_one, word_two)
-    @word_one = word_one
-    @word_two = word_two
+    @word_one = word_one.downcase
+    @word_two = word_two.downcase
     @anagram
   end
 
