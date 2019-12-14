@@ -10,14 +10,18 @@
 #  _Specification Chart_
 | Behavior  | Input  | Output  |
 |--------------|-----------|-----------|
-|compares two strings, anagram if all same letters|"book","book"| true|
+|compares two strings, anagram if all same letters|"listen", "silent"| "are"|
+|account for different cases|"LiSten", "sIleNt"| true|
+|check for a vowel |"LStn", "slNt"| "not"|
+|check for no letters match, is antigram|""| |
+|check for multiword anagram and antgram |""| |
 
 ******************
 #### _Instructions_
-<!-- In the console:
+In the console:
  * run "bundle"
  * run "ruby ruby_scripts.rb"
- * enter your dollar amount in pennies -->
+
 ***************
 # _Technology Used_
 * Ruby
@@ -26,4 +30,4 @@
 ###### _Licensing_
 MIT public
 
-github pages link:  
+github pages link:  https://bryonburke.github.io/anagram_checker/
