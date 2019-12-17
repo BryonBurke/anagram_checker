@@ -31,7 +31,7 @@ end
 
 describe('#ruby_logic') do
   it("checks to see if multiple words are an anagram") do
-    my_multiple_word = Anagram.new("this is a test", "this is a test")
+    my_multiple_word = Anagram.new("this is a test", "this is not a test")
     expect(my_multiple_word.test_anagram).to(eq("are"))
   end
 end
