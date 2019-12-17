@@ -11,10 +11,10 @@
 | Behavior  | Input  | Output  |
 |--------------|-----------|-----------|
 |compares two strings, anagram if all same letters|"listen", "silent"| "are"|
-|account for different cases|"LiSten", "sIleNt"| true|
-|check for a vowel |"LStn", "slNt"| "not"|
-|check for no letters match, is antigram|""| |
-|check for multiword anagram and antgram |""| |
+|account for different cases|"LiSten", "sIleNt"| "are"|
+|check for a vowel |"LStn", "slNt"| "are not"|
+|check for no letters match, is antigram|"flop", "beer"|"are" |
+|check for multiword anagram |"this is a test", "this is a test"|"compares" |
 
 ******************
 #### _Instructions_
