@@ -14,7 +14,8 @@
 |account for different cases|"LiSten", "sIleNt"| "are"|
 |check for a vowel |"LStn", "slNt"| "are not"|
 |check for no letters match, is antigram|"flop", "beer"|"are" |
-|check for multiword anagram |"this is a test", "this is a test"|"compares" |
+|check for multiword anagram |"this is a test", "this is a test"|"are" |
+|check for multiword antigram |"this is a test", "flop on u bord" |"are" |
 
 ******************
 #### _Instructions_
