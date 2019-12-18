@@ -7,25 +7,23 @@ class Anagram
     @word_one.gsub!(/\s+/, '')
     @word_two.gsub!(/\s+/, '')
 
-  
-
   end
 
   def test_anagram()
-    @word_one_array = @word_one.split
-    @word_one_array.sort
-    @word_two_array = @word_two.split
-    @word_two_array.sort
+    @word_one_array = @word_one.split(//)
+    sort_one = @word_one_array.sort
+    @word_two_array = @word_two.split(//)
+    sort_two = @word_two_array.sort
 
-    if @word_one_array = @word_two_array
+    if sort_one = sort_two
       @anagram = "are"
     else
-      @anagram = "are not "
+      @anagram = "are not"
     end
     return @anagram
   end
 
-  def check_for_vowels()
+  def check_for_vowels
     if @word_one.split =~ /[aeiou]/
       @is_word = "are"
     else
@@ -35,13 +33,16 @@ class Anagram
   end
 
 
-  def check_for_antigram()
-    @word_one_array = @word_one.split
-    @word_two_array = @word_two.split
-    if (@word_one_array.include? @word_two_array)
-      @antigram = " are not"
-    else
+  def test_antigram
+    @word_one_array = @word_one.split(//)
+    sort_one = @word_one_array.sort
+    @word_two_array = @word_two.split(//)
+    sort_two = @word_two_array.sort
+    antigram_array = sort_one - sort_two
+    if antigram_array.length() == sort_one.length()
       @antigram = "are"
+    else
+      @antigram = "are not "
     end
     return @antigram
   end
